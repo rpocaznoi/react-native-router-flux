@@ -84,7 +84,7 @@ var AppNavigator=scenes||navigator||_navigationStore2.default.create(children,da
 _navigationStore2.default.reducer=createReducer&&createReducer(props);
 if(dispatch&&state){
 
-// _navigationStore2.default.setState(state);
+setTimeout(() => _navigationStore2.default.setState(state),100);
 _navigationStore2.default.dispatch=dispatch;
 return _react2.default.createElement(AppNavigator,{navigation:(0,_reactNavigation.addNavigationHelpers)({dispatch:dispatch,state:state}),__source:{fileName:_jsxFileName,lineNumber:89}});
 }
